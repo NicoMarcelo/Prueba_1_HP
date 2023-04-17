@@ -1,0 +1,43 @@
+﻿@model Prueba_1_HP.Models.Asignatura
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Asignatura</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NombreAsignatura" class="control-label"></label>
+                <input asp-for="NombreAsignatura" class="form-control" />
+                <span asp-validation-for="NombreAsignatura" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescripcionAsignatura" class="control-label"></label>
+                <input asp-for="DescripcionAsignatura" class="form-control" />
+                <span asp-validation-for="DescripcionAsignatura" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CodigoAsignatura" class="control-label"></label>
+                <input asp-for="CodigoAsignatura" class="form-control" />
+                <span asp-validation-for="CodigoAsignatura" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
