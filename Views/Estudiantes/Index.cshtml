@@ -33,6 +33,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.FechaNacimientoEstudiante)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sexo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre_apoderado)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -59,6 +65,12 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.FechaNacimientoEstudiante)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sexo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre_apoderado)
             </td>
             <td>
                     <a asp-action="Edit" class="btn btn-light" asp-route-id="@item.RutEstudiante">Actualizar</a> 

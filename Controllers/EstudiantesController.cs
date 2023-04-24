@@ -55,7 +55,7 @@ namespace Prueba_1_HP.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("NombreEstudiante,EmailEstudiante,ApellidoEstudiante,RutEstudiante,DireccionEstudiante,EdadEstudiante,FechaNacimientoEstudiante")] Estudiante estudiante)
+        public async Task<IActionResult> Create([Bind("NombreEstudiante,EmailEstudiante,ApellidoEstudiante,RutEstudiante,DireccionEstudiante,EdadEstudiante,FechaNacimientoEstudiante,sexo,nombre_apoderado")] Estudiante estudiante)
         {
             if (ModelState.IsValid)
             {

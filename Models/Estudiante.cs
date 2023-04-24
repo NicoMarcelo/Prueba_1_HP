@@ -15,6 +15,10 @@ public partial class Estudiante
 
     public string DireccionEstudiante { get; set; } = null!;
 
+    public string? sexo { get; set; }
+
+    public string nombre_apoderado { get; set; } = null!;
+
     public int EdadEstudiante { get; set; }
 
     public DateOnly FechaNacimientoEstudiante { get; set; }
